@@ -1,14 +1,10 @@
 import React from 'react';
+import Header from "./components/header";
 
 function App() {
   return (
     <div>
-      <header>
-        <h1>Portfolio</h1>
-      </header>
-      <nav>
-        <p>Nav stuff will be here</p>
-      </nav>
+      <Header />
       <main>
         <h2>Main Stuff Here</h2>
       </main>
