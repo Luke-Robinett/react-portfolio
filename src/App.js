@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from "./components/navbar";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -8,9 +9,11 @@ function App() {
       <main>
         <h2>Main Stuff Here</h2>
       </main>
-      <footer>
-        2020 by Luke Robinett
-      </footer>
+
+      <Footer
+        date="2020"
+        name="Luke Robinett"
+      />
     </div>
   );
 }
