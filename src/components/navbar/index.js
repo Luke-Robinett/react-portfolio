@@ -1,8 +1,9 @@
 import React from "react";
-import NavItem from "./nav-item";
-import itemData from "./navbar/navbar.json";
+import NavItem from "../nav-item";
+import itemData from "../navbar/navbar.json";
 
 function NavBar(props) {
+    alert(location.pathname);
     return (
         <header>
             <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -18,7 +19,7 @@ function NavBar(props) {
                                 return (
                                     <NavItem
                                         text={item.text}
-                                        to={item.href}
+                                        href={item.href}
                                         active={item.href === Window.pathname}
                                     />
                                 )
