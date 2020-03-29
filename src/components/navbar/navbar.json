@@ -1,0 +1,14 @@
+[
+    {
+        "text": "Home",
+        "href": "index.html"
+    },
+    {
+        "text": "Gallery",
+        "href": "gallery.html"
+    },
+    {
+        "text": "Contact",
+        "href": "contact.html"
+    }
+]
