@@ -1,5 +1,6 @@
 import React from "react";
 import NavItem from "./nav-item";
+import itemData from "./navbar/navbar.json";
 
 function NavBar(props) {
     return (
@@ -12,19 +13,17 @@ function NavBar(props) {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
-                        <NavItem
-                            href="index.html"
-                            text="Home"
-                            active={true}
-                        />
-                        <NavItem
-                            href="gallery.html"
-                            text="Gallery"
-                        />
-                        <NavItem
-                            href="contact.html"
-                            text="Contact"
-                        />
+                        {
+                            itemData.map(item => {
+                                return (
+                                    <NavItem
+                                        text={item.text}
+                                        to={item.href}
+                                        active={item.href === Window.pathname}
+                                    />
+                                )
+                            })
+                        }
                     </ul>
                 </div>
             </nav>
