@@ -13,10 +13,10 @@ function App() {
         <NavBar />
 
         <main className="container mt-3">
-          <Route exact path={process.env.PUBLIC_URL} + "/" component={About} />
-          <Route exact path={process.env.PUBLIC_URL} + "/about" component={About} />
-          <Route exact path={process.env.PUBLIC_URL} + "/gallery" component={Gallery} />
-          <Route exact path={process.env.PUBLIC_URL} + "/contact" component={Contact} />
+          <Route exact path= "/" component={About} />
+          <Route exact path= "/about" component={About} />
+          <Route exact path= "/gallery" component={Gallery} />
+          <Route exact path= "/contact" component={Contact} />
         </main>
 
         <Footer
