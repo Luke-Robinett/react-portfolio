@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter, Route } from "react-router-dom";
-import NavBar from "./components/navbar/";
+import { Route } from "react-router-dom";
+import NavBar from "./components/navbar";
 import About from "./pages/about";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/contact";
@@ -8,7 +8,7 @@ import Footer from "./components/footer";
 
 function App() {
   return (
-    <BrowserRouter>
+    <div>
       <NavBar />
 
       <main className="container mt-3">
@@ -22,7 +22,7 @@ function App() {
         date="2020"
         name="Luke Robinett"
       />
-    </BrowserRouter>
+    </div>
   );
 }
 
