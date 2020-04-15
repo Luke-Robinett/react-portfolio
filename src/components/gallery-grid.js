@@ -1,28 +1,19 @@
 import React from "react";
+import GalleryItem from "./gallery-item";
 import pizzaBoxScreen from "../assets/img/pizzabox-screen.png";
 import plannerScreen from "../assets/img/planner-screen.png";
 import weatherScreen from "../assets/img/weather-screen.png";
 
 function GalleryGrid(props) {
     return (
-        <div className="row">
-            <div className="col-12 col-lg-3 M-2">
-                <div className="card">
-                    <img src={pizzaBoxScreen} className="card-img-top" alt="Screenshot of PizzaBox app" />
-                    <div className="card-body">
-                        <h5 className="card-title">PizzaBox</h5>
-                        <a href="https://luke-robinett.github.io/PizzaBox/" target="_blank" className="btn btn-primary"
-                            role="button">Launch</a> &nbsp;
-            <a href="https://github.com/Luke-Robinett/pizzabox" target="_blank" className="btn btn-secondary"
-                            role="button">Visit Repo</a>
-                        <p className="card-text">The recipe search app PizzaBox is a collaborative project where I am one of three
-              contributors. I developed the JavaScript for the app functionality and partnered on UI design.</p>
-                        <p className="card-text">The app utilizes the Edamam recipe search API. It allows users to search for any
-                        igredient or
-              dish and then get detailed nutrition and ingredient information.</p>
-                    </div>
-                </div>
-            </div>
+        <div>
+            <GalleryItem
+                title="PizzaBox"
+                image={pizzaBoxScreen}
+                appLink="https://luke-robinett.github.io/PizzaBox"
+                gitLink="https://github.com/Luke-Robinett/pizzabox"
+                description="Collaborative project demonstrating a recipe search and nutrition app"
+            />
 
             <div className="col-12 col-lg-3 M-2">
                 <div className="card">
@@ -52,7 +43,7 @@ function GalleryGrid(props) {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
