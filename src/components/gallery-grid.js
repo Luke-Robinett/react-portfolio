@@ -3,13 +3,13 @@ import GalleryItem from "./gallery-item";
 import excelsiorScreen from "../assets/img/excelsior-screen.png";
 import peerupScreen from "../assets/img/peerup-screen.png";
 import pizzaBoxScreen from "../assets/img/pizzabox-screen.png";
-import empDirScreen from "../assets/img/empdirectory_screen.png"
+import empDirScreen from "../assets/img/empdirectory-screen.png";
 import plannerScreen from "../assets/img/planner-screen.png";
 import weatherScreen from "../assets/img/weather-screen.png";
 
 function GalleryGrid(props) {
     return (
-        <div>
+        <div className="row">
             <GalleryItem
                 title="PizzaBox"
                 image={pizzaBoxScreen}
@@ -21,7 +21,7 @@ function GalleryGrid(props) {
             <GalleryItem
                 title="PeerUp"
                 image={peerupScreen}
-                appLink="https://peer-up.herokuapp.com/"
+                appLink="https://peer-up.herokuapp.com"
                 gitLink="https://github.com/marissa-lc/Peer-One"
                 description="Collaborative project demonstrating a social media app aimed toward connecting students with peer mentors in their area of study"
             />
@@ -45,7 +45,7 @@ function GalleryGrid(props) {
             <GalleryItem
                 title="Weather Dashboard"
                 image={weatherScreen}
-                appLink="https://luke-robinett.github.io/weather-dashboard/"
+                appLink="https://luke-robinett.github.io/weather-dashboard"
                 gitLink="https://github.com/Luke-Robinett/weather-dashboard"
                 description="Weather Dashboard app that leverages the Open Weather API to provide current conditions and a five-day forecast for the visitor's current location or any city in the world"
             />
